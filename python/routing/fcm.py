@@ -1,6 +1,8 @@
-
 import skfuzzy
+
 import numpy as np
+import matplotlib.pyplot as plt
+#import skfuzzy as fuzz
 import logging, sys
 
 from python.routing.mte import *

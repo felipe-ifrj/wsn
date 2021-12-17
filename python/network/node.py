@@ -4,9 +4,11 @@ from python.network.energy_source import *
 from python.utils.utils import *
 
 class Node(object):
-  def __init__(self, id, parent = None):
+  #def __init__(self, id, sts, str, parent = None):
+  def __init__(self, id, parent = None): 
     self.pos_x = np.random.uniform(0, cf.AREA_WIDTH)
     self.pos_y = np.random.uniform(0, cf.AREA_LENGTH)
+   
 
     if id == cf.BSID:
       self.energy_source = PluggedIn(self)
@@ -14,7 +16,10 @@ class Node(object):
       self.energy_source = Battery(self)
 
     self.id = id
+    #self.sts = sts
+    #self.str = str 
     self.network_handler = parent
+   
 
     self.reactivate()
 

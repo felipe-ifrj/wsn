@@ -27,3 +27,4 @@ class RoutingProtocol(object):
 
   def broadcast(self, network):
     network.broadcast_next_hop()
+
