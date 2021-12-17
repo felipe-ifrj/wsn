@@ -1,15 +1,20 @@
 # -*- coding: utf-8 -*-
 import logging, sys
 import inspect
-
+#import skfuzzy as fuzz
+import skfuzzy
 import config as cf
+
 from python.network.network import Network
 from python.utils.tracer import *
-from python.routing.direct_communication import *
-from python.routing.mte import *
+#from python.routing.direct_communication import *
+#from python.routing.mte import *
 from python.routing.leach import *
-from python.routing.fcm import *
+from python.routing.sleach import *
+#from python.routing.fcm import *
 from python.network.aggregation_model import *
+from python.routing.hcamaw import *
+from python.routing.camaw import *
 
 logging.basicConfig(stream=sys.stderr, level=logging.INFO)
 
